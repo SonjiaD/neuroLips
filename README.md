@@ -23,14 +23,14 @@ The project follows a pipeline that includes data preprocessing, statistical ana
 - Comparing brain activation patterns between different tasks using statistical tests.
 
 ### 3. **Machine Learning Classification**
-- Built a **Random Forest** model to predict task types (Lips vs. Finger) based on voxel activation.
-- Applied **Logistic Regression** for a baseline comparison.
+- Built a **Logistic Regression** model to predict task types (Lips vs. Finger) based on voxel activation.
+- Evaluated the model’s performance using metrics such as accuracy, precision, recall, and F1-score.
 - Used **cross-validation** to improve the model's performance.
-- Evaluated model performance using metrics such as accuracy, precision, recall, and F1-score.
+- Applied additional **feature engineering** to enhance the classification.
 
 ### 4. **Visualization**
 - Visualized brain activation patterns on fMRI slices.
-- Generated feature importance plots for the Random Forest model to interpret key contributing features.
+- Generated feature importance plots to interpret key contributing features for the classification model.
 
 ## Getting Started
 
@@ -39,9 +39,8 @@ To run this project locally, follow these steps:
 ### Prerequisites
 Ensure you have the following libraries installed in your R environment:
 - `caret`
-- `randomForest`
 - `ggplot2`
 - `dplyr`
 
 ```r
-install.packages(c('caret', 'randomForest', 'ggplot2', 'dplyr'))
+install.packages(c('caret', 'ggplot2', 'dplyr'))
